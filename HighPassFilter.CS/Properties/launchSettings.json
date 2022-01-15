@@ -1,0 +1,8 @@
+{
+    "profiles": {
+        "HighPassFilter.CS": {
+            "commandName": "Project",
+            "nativeDebugging": true
+        }
+    }
+}

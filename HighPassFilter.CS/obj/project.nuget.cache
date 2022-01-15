@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0R78pDve61nBb5HQTgjrRbBk/9Vmjw/kDLCw+2mYasEu2Mil/0WoOug8SwXKZ9+wx5aA4ISGSBkA24B217HoXA==",
+  "success": true,
+  "projectFilePath": "C:\\!Programing\\HighPassFilter\\HighPassFilter.CS\\HighPassFilter.CS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

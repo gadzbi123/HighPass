@@ -1,0 +1,11 @@
+﻿  Performing Custom Build Tools
+  Microsoft (R) Macro Assembler (x64) Version 14.29.30136.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+   Assembling: Main.asm
+LINK : warning LNK4216: Exported entry point DllEntry
+     Creating library C:\!Programing\HighPassFilter\x64\Release\HighPassFilter.Asm.lib and object C:\!Programing\HighPassFilter\x64\Release\HighPassFilter.Asm.exp
+HighPassFilter.Asm.exp : warning LNK4070: /OUT:Main.dll directive in .EXP differs from output filename 'C:\!Programing\HighPassFilter\x64\Release\HighPassFilter.Asm.dll'; ignoring directive
+  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+HighPassFilter.Asm.exp : warning LNK4070: /OUT:Main.dll directive in .EXP differs from output filename 'C:\!Programing\HighPassFilter\x64\Release\HighPassFilter.Asm.dll'; ignoring directive
+  HighPassFilter.Asm.vcxproj -> C:\!Programing\HighPassFilter\x64\Release\HighPassFilter.Asm.dll

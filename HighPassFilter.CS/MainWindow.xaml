@@ -1,0 +1,54 @@
+﻿<Window x:Class="HighPassFilter.CS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HighPassFilter.CS"
+        mc:Ignorable="d" ResizeMode="CanMinimize" Background="LightSkyBlue" Height="600" Width="900"
+        Title="JA">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="7*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<TextBlock Grid.Row="0" Text="Filtr górnoprzepustowy" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+		<TextBlock Grid.Row="1" Text="(High Pass Image Filter)" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+
+		<ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto" Margin="10">
+			<StackPanel x:Name="BitmapPanel" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+			</StackPanel>
+		</ScrollViewer>
+
+		<StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+			<Button x:Name="BrowseForBitmapButton" Content="Browse" FontSize="12" Height="40" Width="100" Padding="2" Click="BrowseForBitmapButton_Click" Margin="5"
+					Background="Snow"/>
+
+			<StackPanel Orientation="Horizontal" Margin="15">
+				<CheckBox x:Name="CppAlgorithmBox" Content="C++" FontSize="12" Padding="2" VerticalAlignment="Center" 
+					Checked="CsAlgorithmBox_Checked" Unchecked="CsAlgorithmBox_Unchecked" FontWeight="Bold"/>
+				<CheckBox x:Name="AsmAlgorithmBox" Content="ASM" FontSize="12" Padding="2" VerticalAlignment="Center"
+					Checked="AsmAlgorithmBox_Checked" Unchecked="AsmAlgorithmBox_Unchecked" Margin="15,0,0,0" FontWeight="Bold"/>
+			</StackPanel>
+
+			<StackPanel Margin="5">
+				<TextBlock Text="How many threads?" FontSize="12" Margin="10,0,0,0" HorizontalAlignment="Center" FontWeight="Bold"/>
+				<TextBox x:Name="ThreadCountBox" FontSize="12" Margin="10,0,0,0" VerticalAlignment="Center" Width="100" TextAlignment="Center" Text="1"/>
+			</StackPanel>
+		</StackPanel>
+
+		<StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+			<Button x:Name="FilterBitmapButton" Content="Apply filter" FontSize="12" Height="40" Width="100" Click="FilterBitmapButton_Click" Margin="10,0,0,0"
+					Padding="2" Background="Snow"/>
+			<Button x:Name="SaveBitmapButton" Content="Save" FontSize="12" Height="40" Width="100" Click="SaveBitmapButton_Click"
+			        Margin="10,0,0,0" Padding="2" Background="Snow"/>
+
+			<TextBlock x:Name="ExecutionTimeBlock" FontSize="12" VerticalAlignment="Center" Margin="10,0,0,0"/>
+
+
+		</StackPanel>
+	</Grid>
+</Window>

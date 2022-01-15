@@ -1,0 +1,3 @@
+LIBRARY Main
+EXPORTS DllEntry
+EXPORTS ApplyHighPassFilterAsm

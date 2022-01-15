@@ -1,0 +1,2 @@
+^C:\!PROGRAMING\HIGHPASSFILTER\HIGHPASSFILTER.ASM\MAIN.ASM
+ml64 /c /FoC:\!Programing\HighPassFilter\x64\Release\\Main.obj Main.asm
