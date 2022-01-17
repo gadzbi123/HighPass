@@ -1,7 +1,8 @@
 ﻿  Main.cpp
      Creating library C:\!Programing\HighPassFilter\x64\Release\HighPassFilter.Cpp.lib and object C:\!Programing\HighPassFilter\x64\Release\HighPassFilter.Cpp.exp
   Generating code
-  Previous IPDB and IOBJ mismatch, fall back to full compilation.
-  All 3 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  1 of 3 functions (33.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   HighPassFilter.Cpp.vcxproj -> C:\!Programing\HighPassFilter\x64\Release\HighPassFilter.Cpp.dll

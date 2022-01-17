@@ -33,11 +33,9 @@ unsigned char ApplyMaskToRGB(unsigned char* imageFragment)
 
 extern "C" __declspec(dllexport) unsigned char* __stdcall ApplyHighPassFilterCpp(unsigned char* inputBitmap, int inputBitmapLength, int inputBitmapWidth, int startIndex, int endIndex)
 {
-	MaskMatrix = new int[] { 1, -2, 1, -2, 5, -2, 1, -2, 1}; // { 0, -1, 0, -1, 5, -1, 0, -1, 0};
+	MaskMatrix = new int[] { 1, -2, 1, -2, 5, -2, 1, -2, 1}; 
 
-	unsigned char* r = new unsigned char[9];
-	unsigned char* g = new unsigned char[9];
-	unsigned char* b = new unsigned char[9];
+
 
 	unsigned char* filteredFragment = new unsigned char[endIndex - startIndex + 1];
 
@@ -48,6 +46,10 @@ extern "C" __declspec(dllexport) unsigned char* __stdcall ApplyHighPassFilterCpp
 
 	for (auto i = startIndex; i <= endIndex; i += 3)
 	{
+		unsigned char* r = new unsigned char[9];
+		unsigned char* g = new unsigned char[9];
+		unsigned char* b = new unsigned char[9];
+
 		if (!((i < inputBitmapWidth) || (i % inputBitmapWidth == 0) || (i >= inputBitmapLength - inputBitmapWidth) || ((i + 2 + 1) % inputBitmapWidth == 0)))
 		{
 			for (auto y = 0; y < 3; y++)

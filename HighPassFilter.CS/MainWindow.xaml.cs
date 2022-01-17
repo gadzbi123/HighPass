@@ -2,6 +2,7 @@
 using Microsoft.Win32;
 using System;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Windows;
@@ -152,6 +153,7 @@ namespace HighPassFilter.CS
 		}
 		
 		//Converts the bytes that were filtered to Image that will be seen in the app
+		[SuppressMessage("ReSharper.DPA", "DPA0001: Memory allocation issues")]
 		private static BitmapImage ConvertBitmapBytesToImageSource(byte[] bitmapBytes)
 		{
 			if (bitmapBytes == null)
